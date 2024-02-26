@@ -1,0 +1,349 @@
+body {
+    font-family: "Open Sauce Two", sans-serif;
+    color:#084616;
+    background: #70718e;
+    /*height: 100vh;*/
+    margin: 0; 
+    padding: 0;
+}
+
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+/* FONTS */
+b {
+    font-weight:600;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 50;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 100pt;
+    font-weight:600;
+    line-height: 75%;
+    margin-top: 5%;
+    color: #ffffff75;
+}
+  
+em {
+    color: #ffffff84;
+}
+
+/*
+p {
+    font-size: 30px;
+    color: #ffffff;
+}
+*/
+
+button {
+    background-color: #3b362f;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(130, 118, 106);
+    border:none;
+}
+
+
+label {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .year-btns {
+    position: relative;
+    margin-left: 10px;
+    width: 100%;
+    padding: 25px;
+    width: 30%;
+    font-size: 24px;
+    color: #4656a0;
+  }
+
+.tree-info {
+    position: absolute;
+    font-family: Georgia, serif;
+    font-weight:900;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 25px;
+    height: auto;
+    font-size: 50px;
+    color: #ffffff;
+    /*background-color: #00000000;*/
+    border-radius: 1%;
+  }
+
+  #pd {
+    transition: color 2s ease 0s;
+  }
+  
+  .stage {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: left;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #084616;
+    text-align: center;
+    top: 0%;
+    padding: 5%;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+    float: left;
+  }
+  
+  .row {
+    font-size: 0px;
+    display: flex;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 95%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(210, 231, 243, 0.9);
+    font-size: 0px;
+    border-style: solid;
+    border-radius: 3%;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .content {
+    
+    position: absolute;
+    line-height: 12pt;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .box-absolute-left-10 {
+    color: rgb(124, 28, 28);
+    background-color: rgba(240, 248, 255, 0);
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+
+    -webkit-background-clip: text;
+    -webkit-filter: invert() sepia();
+
+    padding: 5%;
+    line-height: 175%;
+  
+    /*position: absolute;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*margin-left: 20%;*/
+  }
+  
+  #visit {
+    color: #084616;
+    text-decoration: none;
+  }
+  
+  .box-absolute-left-10 a {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+
+    /*position: fixed;*/
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .box-absolute-left-10 a:hover {
+    color: #4b7455;
+  }
+  
+  .box-absolute-left-40 {
+    background-color: rgba(240, 248, 255, 0);
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+
+    -webkit-background-clip: text;
+    -webkit-filter: invert() sepia();
+  
+    padding: 5%;
+
+    line-height: 175%;
+  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 20%;
+    display: flex;
+  }
+  
+  .box-absolute-left-40 h1 {
+    line-height: 100%;
+  }
+  
+  #flex-vertical-centered {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .button-62 {
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .rounded{
+      width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .pointed{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .emphasized { 
+    font-weight: bold;
+    color: #000080;
+  }
+
+    /* Marker tweaks */
+.mapboxgl-popup-close-button {
+    display: none;
+  }
+  
+  .mapboxgl-popup-content {
+    font: 100 15px/22px 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    width: 180px;
+  }
+  
+  .mapboxgl-popup-content h3 {
+    background: #092750;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight:50;
+    margin-top: -15px;
+  }
+  
+  .mapboxgl-popup-content h4 {
+    margin: 0;
+    padding: 10px;
+    font-weight: 50;
+  }
+  
+  .mapboxgl-popup-content div {
+    padding: 10px;
+  }
+  
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 15px;
+  }
+  
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #91c949;
+  }
+
+  div#line1 span#a {
+    display:inline;
+    }
+    div#line1:hover span#a {
+    display:none;
+    }
+    div#line1 span#b {
+    display:none;
+    }
+    div#line1:hover span#b {
+    display:inline;
+    }
